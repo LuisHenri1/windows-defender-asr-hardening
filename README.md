@@ -1,4 +1,3 @@
-````md
 # Windows Defender ASR Hardening
 
 > PowerShell toolkit for strengthening Windows endpoints through Microsoft Defender Attack Surface Reduction (ASR) rules.
@@ -70,7 +69,7 @@ Checks:
 
 ```powershell
 .\test-defender-status.ps1
-````
+```
 
 ---
 
@@ -104,44 +103,44 @@ The current baseline includes protections against:
 
 ## Credential Access
 
-* Credential theft from LSASS
+- Credential theft from LSASS
 
 ## Malicious Office Behavior
 
-* Office child process creation
-* Office process injection
-* Macro abuse
-* Office-generated executable content
+- Office child process creation
+- Office process injection
+- Macro abuse
+- Office-generated executable content
 
 ## Script Abuse
 
-* Obfuscated scripts
-* JavaScript / VBScript launching executables
+- Obfuscated scripts
+- JavaScript / VBScript launching executables
 
 ## Initial Access & Execution
 
-* Executables from email/webmail
-* Untrusted USB processes
-* Vulnerable signed drivers
+- Executables from email/webmail
+- Untrusted USB processes
+- Vulnerable signed drivers
 
 ## Persistence & Lateral Movement
 
-* WMI persistence techniques
-* PSExec / WMI remote process creation
-* Copied or impersonated system tools
+- WMI persistence techniques
+- PSExec / WMI remote process creation
+- Copied or impersonated system tools
 
 ## Impact
 
-* Advanced ransomware protection
+- Advanced ransomware protection
 
 ---
 
 # Requirements
 
-* Windows 10 / Windows 11
-* Microsoft Defender available and enabled
-* PowerShell 5.1+
-* Administrator privileges
+- Windows 10 / Windows 11
+- Microsoft Defender available and enabled
+- PowerShell 5.1+
+- Administrator privileges
 
 ---
 
@@ -181,7 +180,7 @@ Run PowerShell as Administrator.
 
 # Troubleshooting
 
-# Error `0x800106ba`
+## Error `0x800106ba`
 
 Usually indicates that Microsoft Defender Antivirus is disabled, unavailable, or replaced by another security solution.
 
@@ -202,10 +201,10 @@ Start-Service WinDefend
 
 ## Also Check
 
-* Another antivirus installed
-* Group Policy disabling Defender
-* Enterprise management tools overriding local settings
-* Security baseline conflicts
+- Another antivirus installed
+- Group Policy disabling Defender
+- Enterprise management tools overriding local settings
+- Security baseline conflicts
 
 ---
 
@@ -213,11 +212,11 @@ Start-Service WinDefend
 
 Before broad deployment:
 
-* Test in non-production environments
-* Validate business application compatibility
-* Review macro and script dependencies
-* Assess impact on legacy workflows
-* Keep rollback available
+- Test in non-production environments
+- Validate business application compatibility
+- Review macro and script dependencies
+- Assess impact on legacy workflows
+- Keep rollback available
 
 ---
 
@@ -227,12 +226,12 @@ This repository demonstrates practical defensive security using built-in Windows
 
 It highlights skills relevant to:
 
-* SOC / Blue Team roles
-* Endpoint administration
-* Windows hardening
-* Security automation
-* PowerShell scripting
-* Defensive operations
+- SOC / Blue Team roles
+- Endpoint administration
+- Windows hardening
+- Security automation
+- PowerShell scripting
+- Defensive operations
 
 ---
 
@@ -240,14 +239,14 @@ It highlights skills relevant to:
 
 Planned improvements:
 
-* Interactive menu version
-* Audit mode deployment
-* HTML reports
-* CSV exports
-* Restore point creation
-* Enhanced logging
-* Policy conflict detection
-* Enterprise profile templates
+- Interactive menu version
+- Audit mode deployment
+- HTML reports
+- CSV exports
+- Restore point creation
+- Enhanced logging
+- Policy conflict detection
+- Enterprise profile templates
 
 ---
 
@@ -271,7 +270,4 @@ MIT License
 
 # Author
 
-LuisHenri1
-
-```
-```
+[@LuisHenri1](https://github.com/LuisHenri1)
